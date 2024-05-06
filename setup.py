@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='hello_world',
-    version='0.1',
+    version='0.2',
     packages=['hello_world'],
     description='A simple Hello World module',
     long_description=open('README.md').read(),
