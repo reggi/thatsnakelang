@@ -16,6 +16,7 @@ jobs:
 
       - name: build release distributions
         run: |
+          pip install --upgrade setuptools wheel
           python setup.py sdist bdist_wheel
 
       - name: upload windows dists
