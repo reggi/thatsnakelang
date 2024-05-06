@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name='hello_world',
+    name='thatsnakelang',
     version='0.1',
     packages=['hello_world'],
     description='A simple Hello World module',
