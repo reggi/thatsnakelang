@@ -62,6 +62,9 @@ jobs:
       id-token: write
 
     steps:
+      - name: Ensure dist folder exists
+        run: mkdir -p dist
+
       - name: Retrieve root release distributions
         uses: actions/download-artifact@v4
         with:
