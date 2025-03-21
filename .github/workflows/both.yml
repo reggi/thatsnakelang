@@ -14,6 +14,9 @@ jobs:
         with:
           python-version: "3.x"
 
+      - name: Ensure dist folder exists
+        run: mkdir -p dist
+
       - name: Build root release distributions
         run: |
           pip install --upgrade setuptools wheel
@@ -34,6 +37,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
+
+      - name: Ensure nested dist folder exists
+        run: mkdir -p nested/dist
 
       - name: Build nested release distributions
         run: |
