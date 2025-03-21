@@ -62,8 +62,10 @@ jobs:
       id-token: write
 
     steps:
+      - uses: actions/checkout@v4
+
       - name: Ensure dist folder exists
-        run: mkdir -p dist
+        run: mkdir -p dist nested/dist
 
       - name: Retrieve root release distributions
         uses: actions/download-artifact@v4
@@ -76,8 +78,6 @@ jobs:
         with:
           name: nested-release-dists
           path: nested/dist/
-
-      - uses: actions/checkout@v4
 
       - uses: actions/setup-python@v5
         with:
