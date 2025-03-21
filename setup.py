@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='thatsnakelang',
-    version='0.3',
+    version='0.4',
     packages=['hello_world'],
     description='A simple Hello World module',
     long_description=open('README.md').read(),
